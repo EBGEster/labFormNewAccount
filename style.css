@@ -81,3 +81,7 @@ input {
   left: unset;
   right: 12px;
 }
+
+.submit:active {
+  background-color: #06b;
+}
