@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formulario Nueva Cuenta</title>
+    <meta name="description" content="form new account">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body onload="imgOnError()">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="form">
+      <form id="newAccout">
+
+        <h1 class="title">Create Account</h1>
+
+        <div class="input-container">
+          <label for="name">Nombre</label><br />
+          <input type="text" class="user-input" id="name" value="" maxlength="50" onkeydown="return !/[0-9]/i.test(event.key)" required/><br />
+          <span id="errorName" class="error-message"></span>
+          <img id="icon-name" class="input-icon" alt="icon">
+        </div>
+        <div class="input-container">
+          <label for="email">Email</label><br />
+          <input type="email" class="user-input" id="email" value="" required/><br />
+          <span id="errorEmail" class="error-message"></span>
+          <img id="icon-email" class="input-icon" alt="icon">
+        </div>  
+        <div class="input-container">
+          <label for="password">Clave</label><br />
+          <input type="password" class="user-input" id="password" value="" maxlength="8" required/><br />
+          <span id="errorPassword" class="error-message"></span>
+          <img id="icon-password" class="input-icon" alt="icon">
+        </div>  
+        <div class="input-container">
+          <label for="confirmPassword">Confirme su clave</label><br />
+          <input type="password" class="user-input" id="confirmPassword" value=""  maxlength="8" required/><br />
+          <span id="errorConfirmPassword" class="error-message"></span><br />
+          <img id="icon-confirm-password" class="input-icon" alt="icon">
+        </div>  
+          
+          <input class="submit" type="submit" value="Enviar" onclick="event.preventDefault(); validateForm()"/>
+          
+      </form>
+      
+    </div>
+    <script src="index.js" async defer></script>
+  </body>
+</html>
