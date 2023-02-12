@@ -9,8 +9,7 @@ El aspecto deberá ser como el que sigue:
 
 Se deberán tener en cuenta las siguientes validaciones:
 
--        El alumno deberá crear los estilos necesarios para los casos en los que las validaciones sean correctas 
-(color verde) y para los casos en las que no lo sean (color rojo) de acuerdo con los siguientes ejemplos.
+-        El alumno deberá crear los estilos necesarios para los casos en los que las validaciones sean correctas (color verde) y para los casos en las que no lo sean (color rojo) de acuerdo con los siguientes ejemplos.
 
 -        Todos los campos deberán ser obligatorios o de lo contrario tendremos un error del siguiente tipo:
 
@@ -18,8 +17,7 @@ Se deberán tener en cuenta las siguientes validaciones:
 
 -        El campo Nombre deberá ser de tipo Texto, cualquier carácter numérico no será admitido.
 
--        El campo Email deberá ser de tipo “email”. Además, el alumno deberá investigar en internet cómo hacer una
-validación de correo electrónico mediante expresiones regulares. De forma que si el formato del email no es válido 
+-        El campo Email deberá ser de tipo “email”. Además, el alumno deberá investigar en internet cómo hacer una validación de correo electrónico mediante expresiones regulares. De forma que si el formato del email no es válido 
 salga un mensaje con el correspondiente fallo:
 
 ![image](https://user-images.githubusercontent.com/49946505/218332196-20de877b-7732-4364-975e-955f8f7822cd.png)
